@@ -5,7 +5,8 @@ import 'antd/dist/antd.css';
 
 import SliderMenu from "../components/menu";
 import BigCalendar from "../components/bigCalendar";
-import LiteToDo from "../components/toDoList";
+import FuckToDo from "../components/toDoList";
+import LiteTodo from "../components/liteTodo/todoList";
 
 export default function Home() {
   return (
@@ -18,7 +19,8 @@ export default function Home() {
           <BigCalendar />
         </Col>
         <Col span={4} offset={1}>
-          <LiteToDo />
+          <LiteTodo />
+          <FuckToDo />
         </Col>
       </Row>
     </div>

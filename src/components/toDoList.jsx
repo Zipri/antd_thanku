@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { List, Typography, Checkbox } from 'antd';
 
-export default function LiteToDo () {
+export default function FuckToDo () {
   const [tasks, setTasks] = useState([
     'Racing car sprays burning fuel into crowd.',
     'Japanese princess to wed commoner.',
@@ -17,10 +17,13 @@ export default function LiteToDo () {
         header={<div>Header</div>}
         footer={
           <div>
-            <input id="ass"/>
+            <input
+              id="inputTodo"
+              placeholder="write a new task here"
+            />
             <button onClick={() => setTasks([
               ...tasks,
-              document.getElementById("ass").value
+              document.getElementById("inputTodo").value
             ])}>
               tasks
             </button>
